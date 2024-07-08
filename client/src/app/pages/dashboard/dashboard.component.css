@@ -1,0 +1,14 @@
+.dashboard-container {
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
