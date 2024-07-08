@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './launch-plan.component.html',
   styleUrl: './launch-plan.component.css'
 })
-export class LaunchPlanComponent {
+export default class LaunchPlanComponent {
 
 }

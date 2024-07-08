@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './social-contract.component.html',
   styleUrl: './social-contract.component.css'
 })
-export class SocialContractComponent {
+export default class SocialContractComponent {
 
 }

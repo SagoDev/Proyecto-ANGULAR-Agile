@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './group-mood.component.html',
   styleUrl: './group-mood.component.css'
 })
-export class GroupMoodComponent {
+export default class GroupMoodComponent {
 
 }
