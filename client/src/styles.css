@@ -3,3 +3,17 @@
     margin: 0px;
     box-sizing: border-box;
   }
+
+  :root {
+  --color-blanco: #FFFFFF;
+  --color-gris-claro: #F5F5F5;
+  --color-gris-plata: #C0C0C0;
+  --color-gris-medio: #A9A9A9;
+  --color-gris-oscuro: #696969;
+  --color-negro: #000000; /* opcional para contraste */
+}
+
+body {
+  background-color: var(--color-gris-plata);
+  color: var(--color-gris-oscuro);
+}
