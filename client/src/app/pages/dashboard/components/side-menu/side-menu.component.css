@@ -14,30 +14,46 @@
 .body,
 .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
-.header{
-    text-align: center;
-    font-size: larger;
 }
 
 .body {
     height: 80%;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.list-group button {
-    background-color: transparent;
+.footer {
+    justify-content: center;
+    align-items: center;
+    height: 10%;
 }
 
-.list-group button:hover,
+.header {
+    text-align: center;
+    font-size: larger;
+}
+
+.profile.list-group {
+
+    flex-direction: row;
+
+    button {
+        background-color: transparent;
+    }
+
+    .list-group-item {
+        display: flex;
+        gap: 10px;
+        border: none;
+    }
+}
+
 .btn-logout:hover {
     background-color: var(--color-gris-claro) !important;
 }
 
-.list-group-item,
 .btn-logout {
     display: flex;
     gap: 10px;
+    border: none;
 }
