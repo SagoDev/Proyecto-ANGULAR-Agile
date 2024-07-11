@@ -11,6 +11,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './side-menu.component.css'
 })
 export class SideMenuComponent {  
-  public dashboardOptions = DASHBOARD_ROUTES.map(r => r.children ?? []).flat();
+  public practiceOptions = DASHBOARD_ROUTES.map(r => r.children ?? []).flat();
  
 }
