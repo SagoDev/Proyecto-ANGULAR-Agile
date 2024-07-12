@@ -1,30 +1,19 @@
 import { Routes } from '@angular/router';
 
 export const DASHBOARD_ROUTES: Routes = [
+
     {
         path: '',
         loadComponent: () => import('./dashboard.component'),
         children: [
             {
-                path: 'Workboard',
-                loadComponent: () => import('./components/practices/work-board/work-board.component'),
-                title: 'Workboard'
+                path: 'practice',
+                loadChildren: () => import('./components/practices/practices.routes').then(m => m.PRACTICES_ROUTES)
             },
             {
-                path: 'SocialContract',
-                loadComponent: () => import('./components/practices/social-contract/social-contract.component'),
-                title: 'Social Contract'
-            },
-            {
-                path: 'LaunchPlan',
-                loadComponent: () => import('./components/practices/launch-plan/launch-plan.component'),
-                title: 'Launch Plan'
-            },
-            {
-                path: 'GroupMood',
-                loadComponent: () => import('./components/practices/group-mood/group-mood.component'),
-                title: 'Group Mood'
+                path: 'user',
+                loadChildren: () => import('./components/user options/user.options.routes').then(m => m.USER_OPTIONS_ROUTES)
             }
-        ],
-        title: 'Dashboard'
-    }]
+        ]
+    },
+]

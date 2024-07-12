@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { DASHBOARD_ROUTES } from '../../dashboard.routes';
+import { USER_OPTIONS_ROUTES } from '../user options/user.options.routes';
+import { PRACTICES_ROUTES } from '../practices/practices.routes';
 import { RouterModule } from '@angular/router';
 
 
@@ -10,7 +11,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './side-menu.component.html',
   styleUrl: './side-menu.component.css'
 })
-export class SideMenuComponent {  
-  public practiceOptions = DASHBOARD_ROUTES.map(r => r.children ?? []).flat();
- 
+export class SideMenuComponent {
+  public practiceOptions = PRACTICES_ROUTES;
+  public userOptions = USER_OPTIONS_ROUTES;
 }

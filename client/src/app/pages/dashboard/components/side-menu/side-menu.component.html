@@ -1,6 +1,6 @@
 <div class="side-menu-container container">
-    <div class="header">        
-            <i class="bi bi-columns-gap text-white"></i>        
+    <div class="header">
+        <i class="bi bi-columns-gap text-white"></i>
         <div class="logo">
             Agile
         </div>
@@ -8,18 +8,20 @@
     <hr>
     <div class="body">
         <div class="profile list-group list-group-flush">
-            <p>User</p>                     
-            <button type="button" class="list-group-item list-group-item-action">
-                <i class="bi bi-gear"></i>
-                <span>Config</span>
-            </button> 
+            <p>User</p>
+            @for (userOption of userOptions; track $index) {
+            <button [routerLink]="'user/' + userOption.path" type="button" class="list-group-item list-group-item-action">
+                <span>{{userOption.title}}</span>
+            </button>
+            }
         </div>
         <div class="options list-group list-group-flush">
             <p>Practices</p>
             @for (practice of practiceOptions; track $index) {
-                <button [routerLink]="practice.path" type="button" class="list-group-item list-group-item-action text-center">
-                    <span>{{practice.title}}</span>
-                </button> 
+            <button [routerLink]="'practice/' + practice.path" type="button"
+                class="list-group-item list-group-item-action">
+                <span>{{practice.title}}</span>
+            </button>
             }
         </div>
     </div>
@@ -28,6 +30,6 @@
         <button class="btn btn-logout">
             <i class="bi bi-box-arrow-left"></i>
             <span>Log Out</span>
-            </button>
+        </button>
     </div>
 </div>

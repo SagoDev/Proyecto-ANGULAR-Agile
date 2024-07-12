@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './user-tasks.component.html',
   styleUrl: './user-tasks.component.css'
 })
-export class UserTasksComponent {
+export default class UserTasksComponent {
 
 }
