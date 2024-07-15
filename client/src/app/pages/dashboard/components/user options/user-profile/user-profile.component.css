@@ -1,0 +1,17 @@
+.user-profile-field {
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    gap: 5px;
+}
+
+
+.option-view-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-options-field {
+    border-right: var(--color-gris-oscuro) solid 1px;
+}
