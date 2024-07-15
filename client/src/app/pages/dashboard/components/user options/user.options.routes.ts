@@ -11,10 +11,5 @@ export const USER_OPTIONS_ROUTES: Routes = [
         path: 'Tasks',
         loadComponent: () => import('./user-tasks/user-tasks.component'),
         title: 'Tasks',
-    },
-    {
-        path: 'Config',
-        loadComponent: () => import('./user-config/user-config.component'),
-        title: 'Config'
     }
 ];
