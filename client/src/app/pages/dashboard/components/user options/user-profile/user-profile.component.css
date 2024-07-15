@@ -13,5 +13,8 @@
 }
 
 .profile-options-field {
-    border-right: var(--color-gris-oscuro) solid 1px;
+    padding: 5px;
+    text-align: center;
+    font-size: larger;
+    border-right: var(--color-gris-plata) solid 1px;
 }
