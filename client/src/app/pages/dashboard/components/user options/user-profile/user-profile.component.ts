@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { USER_SETTINGS_ROUTES } from './components/settings/settings.routes';
 
 @Component({
   selector: 'app-user-profile',
@@ -9,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './user-profile.component.css'
 })
 export default class UserProfileComponent {
-
+  public userSettings = USER_SETTINGS_ROUTES.flat();
 }

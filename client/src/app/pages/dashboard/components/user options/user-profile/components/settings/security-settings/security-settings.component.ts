@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './security-settings.component.html',
   styleUrl: './security-settings.component.css'
 })
-export class SecuritySettingsComponent {
+export default class SecuritySettingsComponent {
 
 }

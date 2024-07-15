@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './password-settings.component.html',
   styleUrl: './password-settings.component.css'
 })
-export class PasswordSettingsComponent {
+export default class PasswordSettingsComponent {
 
 }

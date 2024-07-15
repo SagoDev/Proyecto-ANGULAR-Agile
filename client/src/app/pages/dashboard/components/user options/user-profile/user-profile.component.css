@@ -12,9 +12,18 @@
     align-items: center;
 }
 
-.profile-options-field {
+.profile-options-field {  
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
     padding: 5px;
     text-align: center;
-    font-size: larger;
     border-right: var(--color-gris-plata) solid 1px;
+}
+
+.options-field{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
 }

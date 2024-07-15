@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './application-settings.component.html',
   styleUrl: './application-settings.component.css'
 })
-export class ApplicationSettingsComponent {
+export default class ApplicationSettingsComponent {
 
 }
