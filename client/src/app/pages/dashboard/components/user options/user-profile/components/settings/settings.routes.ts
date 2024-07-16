@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const USER_SETTINGS_ROUTES: Routes = [
+
     {
         path: 'Account',
         loadComponent: () => import('./user-info/user-info.component'),
@@ -25,6 +26,5 @@ export const USER_SETTINGS_ROUTES: Routes = [
         path: 'Notification',
         loadComponent: () => import('./notification-settings/notification-settings.component'),
         title: 'Notification'
-    } 
-   
+    }
 ];

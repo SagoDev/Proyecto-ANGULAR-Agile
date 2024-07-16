@@ -7,11 +7,11 @@ export const DASHBOARD_ROUTES: Routes = [
         loadComponent: () => import('./dashboard.component'),
         children: [
             {
-                path: 'practice',
+                path: 'Practice',
                 loadChildren: () => import('./components/practices/practices.routes').then(m => m.PRACTICES_ROUTES)
             },
             {
-                path: 'user',
+                path: 'User',
                 loadChildren: () => import('./components/user options/user.options.routes').then(m => m.USER_OPTIONS_ROUTES)
             }
         ]

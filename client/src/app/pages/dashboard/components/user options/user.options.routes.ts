@@ -7,6 +7,10 @@ export const USER_OPTIONS_ROUTES: Routes = [
         title: 'Profile',
         children: [
             {
+                path: '',
+                loadComponent: () => import('./user-profile/components/settings/user-info/user-info.component')
+            },
+            {
                 path: 'Settings',
                 loadChildren: () => import('./user-profile/components/settings/settings.routes').then(m => m.USER_SETTINGS_ROUTES)
             }

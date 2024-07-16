@@ -10,7 +10,7 @@
         <div class="profile list-group list-group-flush">
             <p>User</p>
             @for (userOption of userOptions; track $index) {
-            <button [routerLink]="'user/' + userOption.path" type="button" class="list-group-item list-group-item-action">
+            <button [routerLink]="'User/' + userOption.path" type="button" class="list-group-item list-group-item-action">
                 <span>{{userOption.title}}</span>
             </button>
             }
@@ -18,7 +18,7 @@
         <div class="options list-group list-group-flush">
             <p>Practices</p>
             @for (practice of practiceOptions; track $index) {
-            <button [routerLink]="'practice/' + practice.path" type="button"
+            <button [routerLink]="'Practice/' + practice.path" type="button"
                 class="list-group-item list-group-item-action">
                 <span>{{practice.title}}</span>
             </button>
