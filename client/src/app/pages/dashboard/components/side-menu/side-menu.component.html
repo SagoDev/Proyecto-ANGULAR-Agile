@@ -2,26 +2,26 @@
     <div class="header">
         <i class="bi bi-columns-gap text-white"></i>
         <div class="logo">
-            Agile
+            <h3>Agile</h3>
         </div>
     </div>
     <hr>
     <div class="body">
         <div class="profile list-group list-group-flush">
-            <p>User</p>
+            <h5>User</h5>
             @for (userOption of userOptions; track $index) {
-            <button [routerLink]="'User/' + userOption.path" type="button" class="list-group-item list-group-item-action">
+            <a [routerLink]="'User/' + userOption.path" class="list-group-item list-group-item-action">
                 <span>{{userOption.title}}</span>
-            </button>
+            </a>
             }
         </div>
         <div class="options list-group list-group-flush">
-            <p>Practices</p>
+            <h5>Practices</h5>
             @for (practice of practiceOptions; track $index) {
-            <button [routerLink]="'Practice/' + practice.path" type="button"
+            <a [routerLink]="'Practice/' + practice.path"
                 class="list-group-item list-group-item-action">
                 <span>{{practice.title}}</span>
-            </button>
+            </a>
             }
         </div>
     </div>

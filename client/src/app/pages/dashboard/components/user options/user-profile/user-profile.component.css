@@ -14,9 +14,20 @@
     border-right: var(--color-gris-plata) solid 1px;
 }
 
+.option-view-field{
+    padding: 12px;
+}
+
 .options-field{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
-    height: 70%;
+    height: 100%;
+    gap: 15px;
+}
+
+a.setting{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
 }

@@ -1,19 +1,19 @@
 <div class="user-profile-field">
-    <div class="profile-options-field col-2">
+    <div class="profile-options-field col-3">
         <div class="text-field">
             <h1>Profile</h1>
             <hr>
         </div>
-        <div class="options-field">
+        <div class="options-field list-group">
             @for (settingOption of userSettings ; track $index) {
-            <button [routerLink]="'Settings/' + settingOption.path" type="button"
+            <a [routerLink]="'Settings/' + settingOption.path" type="button"
                 class="list-group-item list-group-item-action setting">
                 <span>{{settingOption.title}}</span>
-            </button>
+            </a>
             }
         </div>
     </div>
-    <div class=" option-view-field col-10">
+    <div class=" option-view-field col-9">
         <router-outlet />
     </div>
 </div>

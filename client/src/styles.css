@@ -1,19 +1,61 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
-  :root {
+:root {
+  --color-azul-oscuro: #0D47A1;
+  --color-azul-medio: #1976D2;
+  --color-azul-claro: #42A5F5;
   --color-blanco: #FFFFFF;
-  --color-gris-claro: #F5F5F5;
-  --color-gris-plata: #C0C0C0;
-  --color-gris-medio: #A9A9A9;
-  --color-gris-oscuro: #696969;
-  --color-negro: #000000; /* opcional para contraste */
+  --color-gris-claro: #E0E0E0;
+  --color-gris-medio: #9E9E9E;
+  --color-gris-oscuro: #636363;
+
+  --color-azul-hover: #1565C0;
+  /* Azul para hover en botones y links */
+  --color-negro-hover: #000000;
+  /* Negro para hover en enlaces */
 }
 
 body {
-  background-color: var(--color-gris-plata);
+  background-color: var(--color-blanco) !important;
+  color: var(--color-gris-oscuro) !important;
+}
+
+button {
+  background-color: var(--color-azul-oscuro) !important;
+  color: var(--color-blanco) !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+}
+
+button:hover {
+  background-color: var(--color-azul-hover) !important;
+}
+
+a {
+  color: var(--color-gris-oscuro) !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+}
+
+label {
   color: var(--color-gris-oscuro);
+}
+
+a:hover {
+  color: var(--color-negro-hover) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-azul-oscuro) !important;
+
 }
