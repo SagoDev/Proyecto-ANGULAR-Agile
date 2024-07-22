@@ -1,32 +1,23 @@
 .user-profile-field {
-    display: flex;
     padding: 10px;
     height: 100%;
-    gap: 5px;
 }
 
-.profile-options-field {  
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column; 
+.profile-options-field {
     padding: 5px;
     text-align: center;
     border-right: var(--color-gris-plata) solid 1px;
 }
 
-.option-view-field{
+.option-view-field {
     padding: 12px;
 }
 
-.options-field{
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    height: 100%;
-    gap: 15px;
+.options-field {
+    text-align: center;
 }
 
-a.setting{
+a.setting {
     padding: 10px;
     border: none;
     font-size: 20px;
