@@ -47,6 +47,12 @@
     }
 }
 
+.options a,
+.profile a {
+    display: flex;
+    justify-content: space-between;
+}
+
 .btn-logout {
     display: flex;
     gap: 10px;

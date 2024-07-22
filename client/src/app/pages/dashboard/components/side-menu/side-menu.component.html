@@ -12,18 +12,21 @@
             @for (userOption of userOptions; track $index) {
             <a [routerLink]="'User/' + userOption.path" class="list-group-item list-group-item-action">
                 <span>{{userOption.title}}</span>
+                <i class="{{getIconForOption(userOption)}}"></i>
+
             </a>
             }
         </div>
         <div class="options list-group list-group-flush">
             <h5>Practices</h5>
             @for (practice of practiceOptions; track $index) {
-            <a [routerLink]="'Practice/' + practice.path"
-                class="list-group-item list-group-item-action">
+              <a [routerLink]="'Practice/' + practice.path" class="list-group-item list-group-item-action">
                 <span>{{practice.title}}</span>
-            </a>
+                <i class="{{getIconForOption(practice)}}"></i>
+              </a>
             }
-        </div>
+          </div>
+          
     </div>
     <hr>
     <div class="footer">
